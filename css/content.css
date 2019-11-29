@@ -1,33 +1,41 @@
 /* CSS Document */
 /*右边主要内容区域*/
 #content{
-    width: 690px;
+    width: 70%;
+    margin-left: 0px;
 }
 
-#slider-wrapper{
-    float: left;
-    width: 680px;
-    height: 300px;
-    margin-right: 20px;
-    margin-bottom: 60px;
+#slider-wrapper{                /*设置商品幻灯广告容器的样式*/
+    float: left;                /*向左浮动*/
+    width: 810px;
+    height: 460px;
+    margin-right: 0px;
+    margin-bottom: 40px;
 }
 
-#slider{
+#slider{                        /*设置商品幻灯广告内容的样式*/
     position: relative;
-    width: 620px;
-    height: 300px;
-    background: url("../images/a.png") no-repeat 50% 50%;
+    width: 720px;
+    height: 480px;
+    margin: auto;
+/*    background: url("../images/a.png") no-repeat 50% 50%;*/    /*背景默认的广告画面加载时的等待图标*/
 }
 
-#slider img{
+#slider img{                    /*广告图片的样式*/
     position: absolute;
     top: 0px;
     left: 0px;
 }
 
-#slider a{
+#slider a{                        /*广告链接的样式*/
     border: 0;
     display: block;
+}
+
+.nivo-controlNav{                /*广告右下角导航区的样式*/
+    position: absolute;
+    right: 560px;
+    bottom: auto;
 }
 
 .nivo-controlNav a{
@@ -41,30 +49,32 @@
     float: left;
 }
 
-.nivo-controlNav a.active{
-    background-position: 0 -18px;
+.nivo-controlNav a.active{        /*鼠标按下链接的样式*/
+    background-position: 0 -18px;        /*背景图像向上移动18px，实现切换导航区背景的效果*/
     
 }
 
-.nivo-directionNav a{
+.nivo-directionNav a{            /*广告画面两端向左向右箭头链接的样式*/
     display: block;
     width: 30px;
-    height: 30px;
-    background: url("../images/a.png") no-repeat;
+    height: 45px;
     text-indent: -9999px;
     border: 0;
 }
 
-a.nivo-nextNav{
+a.nivo-nextNav{                    /*向右箭头链接独立的样式*/
     background-position: -30px 0;
     right: 15px;
+    background: url("../images/Rjiantou.png") no-repeat;
+   
 }
 
-a.nivo-prevNav{
+a.nivo-prevNav{                    /*向左箭头链接独立的样式*/
     left: 15px;
+    background: url("../images/Ljiantou.png") no-repeat;
 }
 
-.product_box{
+.product_box{                        /*单个商品容器的样式*/
     float: left;
     width: 220px;
     text-align: center;
@@ -84,24 +94,24 @@ a.nivo-prevNav{
     margin-bottom: 10px; 
 }
 
-.product_box .product_peice{
+.product_box .product_price{
     color: #11bdd1;
     font-size: 14px;
     font-weight: 700;
     margin-bottom: 20px;
 }
 
-.product_box .addtocart{
+.product_box .addtocart{                /*加入购物车的样式*/
     float: left;
     display: block;
 }
 
-.product_box .detail{
+.product_box .addtowish{                    /*加入心愿单*/
     float: right;
     display: block;
 }
 
-a.addtocart{
+a.addtocart{                            /*加入购物车按钮超链接的样式*/
     display: inline-block;
     width: 80px;
     height: 21px;
@@ -109,11 +119,11 @@ a.addtocart{
     text-align: center;
     font-size: 10px;
     font-weight: bold;
-    color: #333;
-    background: url("../images/a.png");
+    color: red;
+/*    background: url("../images/addtocart.png");*/
 }
 
-a.detail{
+a.addtowish{                                /*加入心愿单按钮的背景图片*/
     display: inline-block;
     width: 64px;
     height: 20px;
@@ -121,10 +131,32 @@ a.detail{
     text-align: center;
     font-size: 10px;
     font-weight: bold;
-    color: #333;
-    background: url("../images/a.png");
+    color: #9E9E9E;
+/*    background: url("../images/addtowish.png");*/
 }
 
+a.addtocart :hover{
+    color: red;
+}
 
+a.addtowish :hover{
+    color: red;
+}
 
+.main .content_alone{
+    width: 818px;
+    margin-top: 500px;
+    margin-bottom: 100px 
+}
 
+.content_left{                            /*商品明细页面*/
+    width: 409px;
+    margin-left: 160px;
+}
+
+.content_right{                            /*商品明细页面*/
+    width: 409px;
+    margin-top: 40px;
+    margin-right: 160px;
+    font-size: 13px;
+}

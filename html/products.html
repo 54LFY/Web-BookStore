@@ -2,8 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>程序猿的书库 - 首页</title>
-<meta name="Keywords" content="程序员，网上购物，书库" />
+<title>Python-商品展示-程序猿的书库</title>
+<meta name="Keywords" content="程序员，网上购物，书库，python" />
 <meta name="Description" content="程序猿的专属书库。">
     <link rel="stylesheet" href="../css/index.css" type="text/css">
     <link rel="stylesheet" href="../css/header.css" type="text/css">
@@ -19,37 +19,22 @@
 </head>
 
 <body>
-    <div class="modal fade" id="mymodal">       <!--提示登入对话框-->
-      <div class="modal-dialog modal-sm">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
-            <h4 class="modal-title">提示</h4>
-          </div>
-          <div class="modal-body">
-            <p align="center">请先登入！</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <div id="body_wrapper">
         <div id="wrapper">
-        <div id="header">                                       <!--头部-->    
-                <div id="header_right">                             <!--右部导航菜单-->
+        <div id="header">                                           <!头部>    
+                <div id="header_right">                             <!右部导航菜单>
                     <ul class="nav nav-secondary">
                       <li class="active"><a href="index.html">首页</a></li>
                       <li><a href="signin.html">登录</a></li>
                       <li><a href="register.html">注册</a></li>
-                      <li><a href="#mymodal" data-toggle="modal" data-moveable="true">我的订单</a></li>
+                      <li><a href="#">我的订单</a></li>
                       <li><a class="dropdown-toggle" data-toggle="dropdown" href="#">我的书库<span class="caret"></span></a>
                           <ul class="dropdown-menu">
                               <li><a href="shoppingcart.html">购物车</a></li>
-                              <li><a href="#mymodal" data-toggle="modal" data-moveable="true">已购买</a></li>
+                              <li><a href="#">已购买</a></li>
                               <li><a href="wishlist.html">心愿单</a></li>
-                              <li><a href="#mymodal" data-toggle="modal" data-moveable="true">最近浏览</a></li>
+                              <li><a href="#">最近浏览</a></li>
+                              
                         </ul>
                       </li>
                     </ul>
@@ -72,7 +57,7 @@
             </div>
             </div>
         <div class="main">
-            <div id="sidebar" class="float_l">                          <!整个左侧界面>
+           <div id="sidebar" class="float_l">                          <!整个左侧界面>
                 <div class="sidebar_box"><span class="bottom"></span>   <!左侧分类列表界面>
                     <h2>计算机书库</h2>
                     <div class="content">
@@ -145,24 +130,8 @@
                 </div>
             </div>
             <div id="content" class="float_r">
-                <div id="slider-wrapper">
-                    <div id="slider" class="nivoSlider">
-                        <a href="productdetail.html"><img src="../images/product/Python_adv.png" alt="" title="Python编程 从入门到精通"/></a>
-                        <a href="#"><img src="../images/product/pythono.png" alt="" title="零基础学Python（全彩版）"/></a>
-                        <a href="#"><img src="../images/product/java.png" alt="" title="Java从入门到精通（第5版）"/></a>
-                        <a href="#"><img src="../images/product/deepstudy.png" alt="" title="深度学习"/></a>
-                    </div>
-                </div>
-                <script type="text/javascript" src="../js/jquery.nivo.slider.pack.js"></script>
-                <script type="text/javascript">
-                    $(window).load(function(){
-                        $('#slider').nivoSlider();
-                    });
-                </script>
-                <div class="cleaner h30"></div>
-                <h1 style="color: red">新书排行榜:</h1><br>
+                <div><h1>商品展示 - Python</h1></div><br>
                 <div class="product_box">
-                    <h3>Python系列</h3>
                     <a href="#"><img src="../images/product/pachong.png" alt="Book 1"/></a>
                     <a href="#"><p>Python3 网络爬虫开发<br>实战</p></a>
                     <p class="product_price">￥79.00</p>
@@ -170,15 +139,13 @@
                     <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
                 </div>
                 <div class="product_box">
-                    <h3>区块链系列</h3>
-                    <a href="#"><img src="../images/product/qukuailian.png" alt="Book 2"/></a>
-                    <a href="#"><p>大话区块链<br>&nbsp;</p></a>
-                    <p class="product_price">￥50.20</p>
+                    <a href="productdetail.html"><img src="../images/product/python2.png" alt="Book 2"/></a>
+                    <a href="productdetail.html"><p>Python编程 从入门到<br>精通</p></a>
+                    <p class="product_price">￥59.70</p>
                     <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
                     <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
                 </div>
                 <div class="product_box">
-                    <h3>Python系列</h3>
                     <a href="#"><img src="../images/product/jinrong.png" alt="Book 3"/></a>
                     <a href="#"><p>基于Python的金融分析<br>与风险管理</p></a>
                     <p class="product_price">￥98.80</p>
@@ -187,35 +154,56 @@
                 </div>
                 <div class="cleaner"></div>         <!--<!横向3个商品展示完毕换行>-->
                 <div class="product_box">
-                    <h3>进阶系列</h3>
-                    <a href="#"><img src="../images/product/threecourses.png" alt="Book 4"/></a>
-                    <a href="#"><p>程序员的三门课<br>&nbsp;</p></a>
-                    <p class="product_price">￥79.00</p>
+                    <a href="#"><img src="../images/product/python3.png" alt="Book 4"/></a>
+                    <a href="#"><p>Python学习手册<br>(套装上下册)</p></a>
+                    <p class="product_price">￥173.00</p>
                     <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
                     <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
                 </div>
                 <div class="product_box">
-                    <h3>算法系列</h3>
-                    <a href="#"><img src="../images/product/suanfa.png" alt="Book 5"/></a>
-                    <a href="#"><p>推荐系统算法实践<br>&nbsp;</p></a>
-                    <p class="product_price">￥89.00</p>
+                    <a href="#"><img src="../images/product/python4.png" alt="Book 5"/></a>
+                    <a href="#"><p>利用python进行数据<br>分析</p></a>
+                    <p class="product_price">￥98.20</p>
                     <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
                     <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
                 </div>
                 <div class="product_box">
-                    <h3>智能计算系列</h3>
-                    <a href="#"><img src="../images/product/jiagou.png" alt="Book 6"/></a>
-                    <a href="#"><p>昇腾AI处理器架构与<br>编程</p></a>
-                    <p class="product_price">￥58.70</p>
+                    <a href="#"><img src="../images/product/python5.png" alt="Book 6"/></a>
+                    <a href="#"><p>Python零基础入门学习<br>（第二版）</p></a>
+                    <p class="product_price">￥75.70</p>
                     <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
                     <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
-                </div>                
+                </div>
+                <div class="cleaner"></div>         <!--<!横向3个商品展示完毕换行>-->
+               <div class="product_box">
+                    <a href="#"><img src="../images/product/python6.png" alt="Book 7"/></a>
+                    <a href="#"><p>Python3 标准库<br>&nbsp;</p></a>
+                    <p class="product_price">￥157.20</p>
+                    <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
+                    <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
+                </div>
+                <div class="product_box">
+                    <a href="#"><img src="../images/product/python7.png" alt="Book 8"/></a>
+                    <a href="#"><p>Python 神经网络编程<br>&nbsp;</p></a>
+                    <p class="product_price">￥57.80</p>
+                    <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
+                    <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
+                </div>
+                <div class="product_box">
+                    <a href="#"><img src="../images/product/python8.png" alt="Book 9"/></a>
+                    <a href="#"><p>深度学习入门<br>&nbsp;</p></a>
+                    <p class="product_price">￥46.60</p>
+                    <a href="shoppingcart.html" class="addtocart" title="加入购物车"><i class="icon icon-shopping-cart icon-2x"></i></a>
+                    <a href="wishlist.html" class="addtowish" title="添加至心愿单"><i class="icon icon-heart-empty icon-2x"></i></a>
+                </div>
+                <div class="cleaner h10"></div>
+                <ul class="pager" data-ride="pager" data-page="1" data-rec-total="99" data-rec-per-page="9"></ul>
             </div>
             <div class="cleaner"></div>
         </div>
         <div id="footer">
             <p><a href="index.html">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">关于我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">联系我们</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">联系客服</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">常见问题</a></p>
-            Copyright &copy; &nbsp;程序员的书房&nbsp;&nbsp;2019&nbsp;&nbsp;|&nbsp;&nbsp;热线：400-420-8888&nbsp;&nbsp;ICP 备 88687747号
+            Copyright &copy; &nbsp;程序员的书房&nbsp;&nbsp;2019&nbsp;&nbsp;|&nbsp;&nbsp;热线：400-420-8888&nbsp;&nbsp;ICP 备 88687747 号
         </div> 
       </div>
     </div>
